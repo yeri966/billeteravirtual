@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.billeteravirtual.controlador.PanelClienteControlador"
+      spacing="20.0" alignment="center" prefWidth="600.0" prefHeight="500.0" style="-fx-padding: 20">
+
+    <Label fx:id="lblNombre" text="Bienvenido" style="-fx-font-size: 16px;" />
+
+    <TableView fx:id="tablaTransacciones" prefHeight="250.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="colFecha" text="Fecha" prefWidth="120"/>
+            <TableColumn fx:id="colDescripcion" text="Descripción" prefWidth="180"/>
+            <TableColumn fx:id="colMonto" text="Monto" prefWidth="100"/>
+            <TableColumn fx:id="colCategoria" text="Categoría" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="20.0" alignment="center">
+        <Button text="Consultar saldo" onAction="#consultarSaldo"
+                style="-fx-background-color: #1e90ff; -fx-text-fill: white" />
+
+        <Button text="Transferir" onAction="#abrirTransferencia"
+                style="-fx-background-color: #228B22; -fx-text-fill: white" />
+
+        <Button text="Editar perfil" onAction="#editarPerfil"
+                style="-fx-background-color: #ffa500; -fx-text-fill: white" />
+
+        <Button text="Cerrar sesión" onAction="#cerrarSesion"
+                style="-fx-background-color: #dc143c; -fx-text-fill: white" />
+    </HBox>
+
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.billeteravirtual.controlador.InicioControlador"
+      alignment="CENTER" spacing="20.0" style="-fx-padding: 40">
+
+    <Label text="Bienvenido a su banco de confianza"
+           style="-fx-font-size: 18px; -fx-font-weight: bold"/>
+
+
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" >
+        <image>
+            <Image url="/logo.png" />
+        </image>
+    </ImageView>
+
+
+    <Label text="¿Qué desea hacer?" >
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+
+    <Button text="Iniciar Sesión"
+            onAction="#irIniciarSesion"
+            style="-fx-min-width: 150px; -fx-background-color: #228B22; -fx-text-fill: white"/>
+
+    <Button text="Registrarse"
+            onAction="#irRegistroCliente"
+            style="-fx-min-width: 150px; -fx-background-color: #1E90FF; -fx-text-fill: white"/>
+</VBox>
