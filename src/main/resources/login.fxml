@@ -29,6 +29,5 @@
     <Button text="Ingresar" onAction="#iniciarSesion"
             minHeight="40.0" minWidth="130.0"
             style="-fx-background-color: #00807a; -fx-text-fill: white" />
-
 </VBox>
 
